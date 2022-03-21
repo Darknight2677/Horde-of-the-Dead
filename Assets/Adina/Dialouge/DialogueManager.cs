@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialougeSysytemMananger : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
-    public Text dialougeText;
+    public Text dialogueText;
 
     //public Animator animator;
 
@@ -17,17 +17,17 @@ public class DialougeSysytemMananger : MonoBehaviour
     {
         sentences = new Queue<string>();
     }
-    public void StartDialouge(Dialouge dialouge)
+    public void StartDialouge(Dialogue dialogue)
     {
         //anaimator.SetBool("IsOpen", true);
-        nameText.text = dialouge.name;
+        nameText.text = dialogue.name;
         sentences.Clear();
 
-        foreach (string snetence in dialouge.sentences)
+        foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
-        DisplayNextSentencs();
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
@@ -43,15 +43,15 @@ public class DialougeSysytemMananger : MonoBehaviour
     }
     IEnumerator TypeSentence(string sentence)
     {
-        dialougeText.text = "";
+        dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
-            dialougeText.text += letter;
+            dialogueText.text += letter;
             yield return null;
         }
     }
 
-    voidEndDialouge()
+    void EndDialouge()
     {
         //anaimator.SetBool("IsOpen", false);
     }

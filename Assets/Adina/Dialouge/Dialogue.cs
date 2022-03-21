@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[Sysytem.Serializable]
-public class NewBehaviourScript
+[System.Serializable]
+public class Dialogue : MonoBehaviour
 {
     [TextArea(1,10)]
     public string[] sentences;
-        public string name;
+    public string name;
 }
