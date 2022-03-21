@@ -25,6 +25,7 @@ public class Shooting : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        Destroy(bullet, 5f);
 
         //RaycastHit2D hitInfo = Physics2D.Raycast(firePoint.position, firePoint.right);
         //if (hitInfo)
