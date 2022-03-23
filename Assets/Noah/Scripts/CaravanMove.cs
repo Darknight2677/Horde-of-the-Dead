@@ -22,6 +22,11 @@ public class CaravanMove : MonoBehaviour
 
     //SpriteRenderer sr;
 
+    private Vector3 targetPos;
+    private Vector3 thisPos;
+    private float angle;
+    public float offset;
+
     private void Start()
     {
         //sr.GetComponent<SpriteRenderer>();
@@ -72,20 +77,29 @@ public class CaravanMove : MonoBehaviour
 
         //Flip the enemy transform to look into the point's direction
 
-        if (goalPoint.transform.position.y > transform.position.y && goalPoint.transform.position.y != transform.position.y)
-            transform.rotation = new Quaternion(0, 0, 1, 1);
-        else if (goalPoint.transform.position.y < transform.position.y && goalPoint.transform.position.y != transform.position.y)
-            transform.rotation = new Quaternion(0, 0, 1, -1);
 
-        if (goalPoint.transform.position.x > transform.position.x && goalPoint.transform.position.x != transform.position.x)
-            transform.rotation = new Quaternion(0, 0, 0, 0);
-        else if (goalPoint.transform.position.x < transform.position.x && goalPoint.transform.position.x != transform.position.x)
-            transform.rotation = new Quaternion(0, 0, -1, 0);
+        //if (goalPoint.transform.position.y > transform.position.y && goalPoint.transform.position.y != transform.position.y)
+        //    transform.rotation = new Quaternion(0, 0, 1, 1);
+        //else if (goalPoint.transform.position.y < transform.position.y && goalPoint.transform.position.y != transform.position.y)
+        //    transform.rotation = new Quaternion(0, 0, 1, -1);
+
+        //if (goalPoint.transform.position.x > transform.position.x && goalPoint.transform.position.x != transform.position.x)
+        //    transform.rotation = new Quaternion(0, 0, 0, 0);
+        //else if (goalPoint.transform.position.x < transform.position.x && goalPoint.transform.position.x != transform.position.x)
+        //    transform.rotation = new Quaternion(0, 0, -1, 0);
+
+        targetPos = goalPoint.position;
+        thisPos = transform.position;
+        targetPos.x = targetPos.x - thisPos.x;
+        targetPos.y = targetPos.y - thisPos.y;
+        angle = Mathf.Atan2(targetPos.y, targetPos.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + offset));
+
 
         //Move the enemy towards the goal point
         transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
         //Check the distance between enemy and goal point to trigger next point
-        if (Vector2.Distance(transform.position, goalPoint.position) < 0.00000000001f)
+        if (Vector2.Distance(transform.position, goalPoint.position) < 0.2f)
         {
             //Check if we are at the end of the line (make the change -1)
             if (nextID == points.Count - 1)
