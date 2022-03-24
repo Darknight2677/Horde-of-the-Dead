@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class NPC : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class NPC : MonoBehaviour
     private float nextFireTime;
 
     public float bulletForce = 20f;
+
+    public Version2AIDestinationSetter Destination;
+    public EnemyMovement Move;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,13 +37,17 @@ public class NPC : MonoBehaviour
         targ.x = targ.x - objectPos.x;
         targ.y = targ.y - objectPos.y;
 
-        float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 270));
+        //float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
+        //transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 270));
 
         float distanceFromTarget = Vector2.Distance(target.position, transform.position);
         if (distanceFromTarget < lineOfSite && distanceFromTarget > shootingRange)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, target.position, speed * Time.deltaTime);
+            //Destination.enabled = false;
+            //Path.enabled = false;
+            //Move.enabled = false;
+            //Seeker.enabled = false;
+            Destination.target = GameObject.FindWithTag("Enemy").transform;
         }
         else if (distanceFromTarget <= shootingRange && nextFireTime < Time.time)
         {
@@ -46,10 +55,21 @@ public class NPC : MonoBehaviour
 
             Shoot();
         }
-        else if(distanceFromTarget < shootingRange)
+        else
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, target.position, -1 * speed * Time.deltaTime);
+            Destination.target = GameObject.FindWithTag("Player").transform;
         }
+        //else if(distanceFromTarget < shootingRange)
+        //{
+        //    transform.position = Vector2.MoveTowards(this.transform.position, target.position, -1 * speed * Time.deltaTime);
+        //}
+        //else
+        //{
+        //    Destination.enabled = true;
+        //    Path.enabled = true;
+        //    Move.enabled = true;
+        //    Seeker.enabled = true;
+        //}
 
     }
 
