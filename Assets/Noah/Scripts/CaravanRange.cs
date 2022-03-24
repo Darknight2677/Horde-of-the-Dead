@@ -15,7 +15,7 @@ public class CaravanRange : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb2 = GetComponent<Rigidbody2D>();
-        mov.enabled = false;
+        //mov.enabled = false;
     }
 
     // Update is called once per frame

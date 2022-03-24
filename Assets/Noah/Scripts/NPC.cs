@@ -10,9 +10,11 @@ public class NPC : MonoBehaviour
     public float lineOfSite;
     public float shootingRange;
     public GameObject enemyBullet;
-    public GameObject enemyBulletParent;
+    public Transform enemyBulletParent;
     public float fireRate = 1f;
     private float nextFireTime;
+
+    public float bulletForce = 20f;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,9 +42,13 @@ public class NPC : MonoBehaviour
         }
         else if (distanceFromTarget <= shootingRange && nextFireTime < Time.time)
         {
-            Instantiate(enemyBullet, enemyBulletParent.transform.position, Quaternion.identity);
-            enemyBullet.rotation == enemyBulletParent.rotation;
             nextFireTime = Time.time + fireRate;
+
+            Shoot();
+        }
+        else if(distanceFromTarget < shootingRange)
+        {
+            transform.position = Vector2.MoveTowards(this.transform.position, target.position, -1 * speed * Time.deltaTime);
         }
 
     }
@@ -53,5 +59,13 @@ public class NPC : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSite);
         Gizmos.DrawWireSphere(transform.position, shootingRange);
+    }
+
+    void Shoot()
+    {
+        GameObject bullet = Instantiate(enemyBullet, enemyBulletParent.position, enemyBulletParent.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(enemyBulletParent.up * bulletForce, ForceMode2D.Impulse);
+        Destroy(bullet, 5f);
     }
 }
