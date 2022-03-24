@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Bullet
   - NPC
+  - Caravan
   layers:
   - Default
   - TransparentFX

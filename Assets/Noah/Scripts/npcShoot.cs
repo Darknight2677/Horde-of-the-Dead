@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class NPC : MonoBehaviour
+public class npcShoot : MonoBehaviour
 {
-    //private Rigidbody2D rb2;
     public float speed;
-    private Transform Target;
+    private Transform Enemy;
     public float lineOfSite;
     public float shootingRange;
     public GameObject enemyBullet;
@@ -25,64 +24,54 @@ public class NPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Target = GameObject.FindGameObjectWithTag("Enemy").transform;
-        //rb2 = GetComponent<Rigidbody2D>();
+        Enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 targ = Target.position;
+        Vector3 targ = Enemy.position;
         targ.z = 0f;
 
         Vector3 objectPos = transform.position;
         targ.x = targ.x - objectPos.x;
         targ.y = targ.y - objectPos.y;
 
-        //float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
-        //transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 270));
-
-        float distanceFromTarget = Vector2.Distance(Target.position, transform.position);
-        if (distanceFromTarget < lineOfSite && distanceFromTarget > shootingRange)
+        float distanceFromTarget = Vector2.Distance(Enemy.position, transform.position);
+        if (distanceFromTarget < lineOfSite)
         {
             //Destination.enabled = false;
             //Path.enabled = false;
             //Move.enabled = false;
             //Seek.enabled = false;
-            Destination.target = GameObject.FindWithTag("Enemy").transform;
-        }
-        else if (distanceFromTarget <= shootingRange && nextFireTime < Time.time)
-        {
-            Destination.enabled = false;
-            Path.enabled = false;
-            Move.enabled = false;
-            Seek.enabled = false;
-            nextFireTime = Time.time + fireRate;
 
-            Shoot();
+            float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 270));
+            Destination.target = GameObject.FindWithTag("Enemy").transform;
+            //if (ai.reachedEndOfPath = true)
+            //{
+            //    Shoot();
+            //}
+
+            if (nextFireTime < Time.time)
+            {
+                nextFireTime = Time.time + fireRate;
+                Shoot();
+            }
         }
-        else
+        if(distanceFromTarget > lineOfSite)
         {
-            Destination.enabled = true;
-            Path.enabled = true;
-            Move.enabled = true;
-            Seek.enabled = true;
+            //Destination.enabled = true;
+            //Path.enabled = true;
+            //Move.enabled = true;
+            //Seek.enabled = true;
             Destination.target = GameObject.FindWithTag("Player").transform;
         }
-        //else if(distanceFromTarget < shootingRange)
-        //{
-        //    transform.position = Vector2.MoveTowards(this.transform.position, target.position, -1 * speed * Time.deltaTime);
-        //}
-        //else
-        //{
-        //    Destination.enabled = true;
-        //    Path.enabled = true;
-        //    Move.enabled = true;
-        //    Seeker.enabled = true;
-        //}
-
+        if (distanceFromTarget < shootingRange)
+        {
+            transform.position = Vector2.MoveTowards(this.transform.position, Enemy.position, -1 * speed * Time.deltaTime);
+        }
     }
-
 
     private void OnDrawGizmosSelected()
     {
