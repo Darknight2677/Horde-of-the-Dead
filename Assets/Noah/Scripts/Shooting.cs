@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
@@ -10,6 +11,15 @@ public class Shooting : MonoBehaviour
 
     public float bulletForce = 20f;
 
+    public int bulletCount;
+    public int maxBulletCount = 30;
+    public Text CurrentBullets;
+    //public Text MaxBullets;
+    void Start()
+    {
+        
+        bulletCount = maxBulletCount;
+    }
     //public int damage = 40;
     // Update is called once per frame
     void Update()
@@ -18,23 +28,39 @@ public class Shooting : MonoBehaviour
         {
             Shoot();
         }
-    }
+        CurrentBullets.text = bulletCount.ToString();
+        if (Input.GetKey(KeyCode.R) && bulletCount <= 0)
+        {
+            StartCoroutine(Reload());
+        }
 
-    void Shoot()
-    {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-        Destroy(bullet, 5f);
+        void Shoot()
+        {
+            if (bulletCount > 0)
+            {
+                GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+                Destroy(bullet, 5f);
+                bulletCount--;
+            }
 
-        //RaycastHit2D hitInfo = Physics2D.Raycast(firePoint.position, firePoint.right);
-        //if (hitInfo)
-        //{
-        //    Enemy enemy = hitInfo.transform.GetComponent<Enemy>();
-        //    if (enemy != null)
-        //    {
-        //        enemy.TakeDamage(damage);
-        //    }
-        //}
+
+            //RaycastHit2D hitInfo = Physics2D.Raycast(firePoint.position, firePoint.right);
+            //if (hitInfo)
+            //{
+            //    Enemy enemy = hitInfo.transform.GetComponent<Enemy>();
+            //    if (enemy != null)
+            //    {
+            //        enemy.TakeDamage(damage);
+            //    }
+            //}
+        }
+
+        IEnumerator Reload()
+        {
+            yield return new WaitForSeconds(1.5f);
+            bulletCount = maxBulletCount;
+        }
     }
 }
