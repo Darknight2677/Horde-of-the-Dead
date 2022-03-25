@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
     public Camera cam;
+    Animator anim;
 
     Vector2 movement;
     Vector2 mousePos;
@@ -19,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     public void Start()
     {
         health = maxHealth;
+        anim = gameObject.GetComponent<Animator>();
+        healthBar.SetMaxHealth(maxHealth);
     }
     // Update is called once per frame
     private void Update()
@@ -27,6 +31,12 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        if (movement.x != 0 || movement.y != 0)
+        {
+            anim.SetBool("IsWalking", true);
+        }
+        else anim.SetBool("IsWalking", false);
     }
 
     private void FixedUpdate()
@@ -42,8 +52,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "RedBeanCan")
         {
-            health = maxHealth;
-            healthBar.SetHealth(maxHealth);
+            health--;
             Destroy(collision.gameObject);
         }
     }
