@@ -19,6 +19,8 @@ namespace Pathfinding
 		/// <summary>The object that the AI should move to</summary>
 		public Transform target;
 		IAstarAI ai;
+		public Version2AIDestinationSetter V2;
+		public Version3AIDestinationSetter V3;
 
 		void OnEnable()
 		{
@@ -38,8 +40,13 @@ namespace Pathfinding
 		/// <summary>Updates the AI's destination every frame</summary>
 		void Update()
 		{
-			target = GameObject.FindWithTag("Enemy").transform;
 			if (target != null && ai != null) ai.destination = target.position;
+			target = GameObject.FindWithTag("Player").transform;
+			if (Input.GetKey(KeyCode.P))
+			{
+				V3.enabled = true;
+				V2.enabled = false;
+			}
 		}
 	}
 }

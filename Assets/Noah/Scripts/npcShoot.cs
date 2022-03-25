@@ -47,7 +47,7 @@ public class npcShoot : MonoBehaviour
 
             float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 270));
-            Destination.target = GameObject.FindWithTag("Enemy").transform;
+            //Destination.target = GameObject.FindWithTag("Enemy").transform;
             //if (ai.reachedEndOfPath = true)
             //{
             //    Shoot();
@@ -59,14 +59,14 @@ public class npcShoot : MonoBehaviour
                 Shoot();
             }
         }
-        if(distanceFromTarget > lineOfSite)
-        {
-            //Destination.enabled = true;
-            //Path.enabled = true;
-            //Move.enabled = true;
-            //Seek.enabled = true;
-            Destination.target = GameObject.FindWithTag("Player").transform;
-        }
+        //if(distanceFromTarget > lineOfSite)
+        //{
+        //    //Destination.enabled = true;
+        //    //Path.enabled = true;
+        //    //Move.enabled = true;
+        //    //Seek.enabled = true;
+        //    Destination.target = GameObject.FindWithTag("Player").transform;
+        //}
         if (distanceFromTarget < shootingRange)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, Enemy.position, -1 * speed * Time.deltaTime);
