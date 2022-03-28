@@ -48,12 +48,12 @@ public class PlayerMovement : MonoBehaviour
         rb.rotation = angle;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "RedBeanCan")
+        if (collision.gameObject.tag == "Enemy")
         {
             health--;
-            Destroy(collision.gameObject);
+            healthBar.SetHealth(health);
         }
     }
 }
