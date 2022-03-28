@@ -16,20 +16,21 @@ public class npcShoot : MonoBehaviour
 
     public float bulletForce = 20f;
 
-    public Version2AIDestinationSetter Destination;
-    public npcMovement Move;
-    public AIPath Path;
-    public Seeker Seek;
+    public int health;
+    public int maxHealth = 3;
+    //public HealthBar healthBar;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
+        health = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
         Vector3 targ = Enemy.position;
         targ.z = 0f;
 
@@ -86,5 +87,14 @@ public class npcShoot : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(enemyBulletParent.up * bulletForce, ForceMode2D.Impulse);
         Destroy(bullet, 5f);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            health--;
+            //healthBar.SetHealth(health);
+        }
     }
 }
