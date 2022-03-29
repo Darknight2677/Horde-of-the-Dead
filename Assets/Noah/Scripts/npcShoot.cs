@@ -20,17 +20,28 @@ public class npcShoot : MonoBehaviour
     public int maxHealth = 3;
     //public HealthBar healthBar;
 
+    private GameObject[] multipleEnemies;
+    public bool enemyContact;
+
+    public int bulletCount;
+    public int maxBulletCount = 30;
+
+    public Version2AIDestinationSetter v2;
+    public Version3AIDestinationSetter v3;
 
     // Start is called before the first frame update
     void Start()
     {
+        bulletCount = maxBulletCount;
         health = maxHealth;
+        Enemy = null;
+        enemyContact = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
+        Enemy = FindClosestNPC();
         Vector3 targ = Enemy.position;
         targ.z = 0f;
 
@@ -54,7 +65,7 @@ public class npcShoot : MonoBehaviour
             //    Shoot();
             //}
 
-            if (nextFireTime < Time.time)
+            if (nextFireTime < Time.time && bulletCount > 0)
             {
                 nextFireTime = Time.time + fireRate;
                 Shoot();
@@ -72,6 +83,11 @@ public class npcShoot : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, Enemy.position, -1 * speed * Time.deltaTime);
         }
+        if (bulletCount <= 0)
+        {
+            v2.enabled = false;
+            v3.enabled = true;
+        }
     }
 
     private void OnDrawGizmosSelected()
@@ -87,6 +103,7 @@ public class npcShoot : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(enemyBulletParent.up * bulletForce, ForceMode2D.Impulse);
         Destroy(bullet, 5f);
+        bulletCount--;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -96,5 +113,28 @@ public class npcShoot : MonoBehaviour
             health--;
             //healthBar.SetHealth(health);
         }
+        if(collision.gameObject.tag == "Caravan" && bulletCount <= 0)
+        {
+            bulletCount = maxBulletCount;
+        }
+    }
+
+    Transform FindClosestNPC()
+    {
+        multipleEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+        float closestDistance = Mathf.Infinity;
+        Transform trans = null;
+
+        foreach (GameObject go in multipleEnemies)
+        {
+            float currentDistance;
+            currentDistance = Vector3.Distance(transform.position, go.transform.position);
+            if (currentDistance < closestDistance)
+            {
+                closestDistance = currentDistance;
+                trans = go.transform;
+            }
+        }
+        return trans;
     }
 }

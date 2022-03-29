@@ -23,9 +23,8 @@ public class EnemyCombat : MonoBehaviour
     public EnemyMovement Move;
     public AIPath Path;
 
-    //private GameObject[] multipleNPCs;
-    //public Transform closestNPC;
-    //public bool npcContant;
+    private GameObject[] multipleNPCs;
+    public bool npcContact;
 
     // Start is called before the first frame update
     public void Start()
@@ -34,14 +33,15 @@ public class EnemyCombat : MonoBehaviour
         Destination.enabled = false;
         Move.enabled = false;
         Path.enabled = false;
-        //closestNPC = null;
-        //npcContact = false;
+        NPC = null;
+        npcContact = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        NPC = GameObject.FindGameObjectWithTag("NPC").transform;
+        //NPC = GameObject.FindGameObjectWithTag("NPC").transform;
+        NPC = FindClosestNPC();
         Vector3 targ = NPC.position;
         targ.z = 0f;
 
@@ -98,22 +98,22 @@ public class EnemyCombat : MonoBehaviour
         }
     }
 
-    //void FindClosestNPC()
-    //{
-    //    multipleNPCs = GameObject.FindGameObjectsWithTag("NPC");
-    //    float closestDistance = Mathf.Infinity;
-    //    Transform trans = null;
+    Transform FindClosestNPC()
+    {
+        multipleNPCs = GameObject.FindGameObjectsWithTag("NPC");
+        float closestDistance = Mathf.Infinity;
+        Transform trans = null;
 
-    //    foreach (GameObject go in multipleNPCs)
-    //    {
-    //        float currentDistance;
-    //        currentDistance = Vector3.Distance(transform.position, go.transform.position);
-    //        if (currentDistance < closestDistance)
-    //        {
-    //            closestDistance = currentDistance;
-    //            trans = go.transform;
-    //        }
-    //    }
-    //    return trans;
-    //}
+        foreach (GameObject go in multipleNPCs)
+        {
+            float currentDistance;
+            currentDistance = Vector3.Distance(transform.position, go.transform.position);
+            if (currentDistance < closestDistance)
+            {
+                closestDistance = currentDistance;
+                trans = go.transform;
+            }
+        }
+        return trans;
+    }
 }
