@@ -10,6 +10,8 @@ public class Dialog : MonoBehaviour
     private int index;
     public float typingSpeed;
 
+    public GameObject continueButton;
+
     void Start()
     {
         StartCoroutine(Type());
@@ -24,8 +26,29 @@ public class Dialog : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if(textDisplay.text == sentences[index])
+        {
+            continueButton.SetActive(true);
+        }
+    }
+
     public void NextSenetence()
     {
+        continueButton.SetActive(false);
 
+        if (index < sentences.Length - 1)
+        {
+            index ++;
+            textDisplay.text = " ";
+            StartCoroutine(Type());
+            //continueButton.SetActive(true);
+        }
+        else
+        {
+            textDisplay.text = " ";
+            continueButton.SetActive(false);
+        }
     }
 }
