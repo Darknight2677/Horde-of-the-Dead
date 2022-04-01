@@ -43,7 +43,7 @@ public class Dialog : MonoBehaviour
             index ++;
             textDisplay.text = " ";
             StartCoroutine(Type());
-            //continueButton.SetActive(true);
+            continueButton.SetActive(true);
         }
         else
         {
