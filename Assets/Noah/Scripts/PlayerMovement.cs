@@ -15,15 +15,15 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     Vector2 mousePos;
 
-    //public int health;
-    //public int maxHealth = 3;
-   // public HealthBar healthBar;
+    public int health;
+    public int maxHealth = 3;
+    public HealthBar healthBar;
 
     public void Start()
     {
-        //health = maxHealth;
+        health = maxHealth;
         anim = gameObject.GetComponent<Animator>();
-        //healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetMaxHealth(maxHealth);
     }
     // Update is called once per frame
     private void Update()
@@ -49,13 +49,13 @@ public class PlayerMovement : MonoBehaviour
         rb.rotation = angle;
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.tag == "Enemy")
-    //    {
-    //        health--;
-    //        healthBar.SetHealth(health);
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            health--;
+            healthBar.SetHealth(health);
+        }
+    }
 }
 

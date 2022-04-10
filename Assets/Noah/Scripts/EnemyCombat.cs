@@ -26,6 +26,8 @@ public class EnemyCombat : MonoBehaviour
     private GameObject[] multipleNPCs;
     public bool npcContact;
 
+    Animator anim;
+
     // Start is called before the first frame update
     public void Start()
     {
@@ -35,6 +37,8 @@ public class EnemyCombat : MonoBehaviour
         Path.enabled = false;
         NPC = null;
         npcContact = false;
+
+        anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -72,6 +76,11 @@ public class EnemyCombat : MonoBehaviour
             {
                 nextAttackTime = Time.time + attackRate;
                 StartCoroutine(Attack());
+                anim.SetBool("Attacking", true);
+            }
+            else
+            {
+                anim.SetBool("Attacking", false);
             }
         }
     }
