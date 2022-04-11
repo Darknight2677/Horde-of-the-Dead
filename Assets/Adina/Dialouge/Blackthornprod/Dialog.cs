@@ -41,13 +41,12 @@ public class Dialog : MonoBehaviour
         if (index < sentences.Length - 1)
         {
             index ++;
-            textDisplay.text = " ";
+            textDisplay.text = "";
             StartCoroutine(Type());
-            continueButton.SetActive(true);
         }
         else
         {
-            textDisplay.text = " ";
+            textDisplay.text = "";
             continueButton.SetActive(false);
         }
     }
