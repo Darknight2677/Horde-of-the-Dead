@@ -197,7 +197,7 @@ namespace Pathfinding {
 		}
 
 		/// <summary>\copydoc Pathfinding::IAstarAI::reachedEndOfPath</summary>
-		public bool reachedEndOfPath { get; protected set; }
+		public bool reachedEndOfPath { get; set; }
 
 		/// <summary>\copydoc Pathfinding::IAstarAI::hasPath</summary>
 		public bool hasPath {
@@ -328,6 +328,7 @@ namespace Pathfinding {
 			if (distanceToEnd <= endReachedDistance) {
 				reachedEndOfPath = true;
 				OnTargetReached();
+
 			}
 		}
 
