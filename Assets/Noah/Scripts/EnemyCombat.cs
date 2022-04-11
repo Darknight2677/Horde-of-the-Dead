@@ -12,8 +12,6 @@ public class EnemyCombat : MonoBehaviour
     public float attackRate = 1f;
     private float nextAttackTime;
 
-    public float bulletForce = 20f;
-
     //public Transform attackPoint;
 
     public int health;
@@ -82,6 +80,11 @@ public class EnemyCombat : MonoBehaviour
             {
                 anim.SetBool("Attacking", false);
             }
+        }
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 

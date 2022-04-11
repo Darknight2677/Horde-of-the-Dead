@@ -122,11 +122,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fe6868c1e6c7f41874caac74d7aaca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 4
   rb: {fileID: 3176051152455461667}
   cam: {fileID: 0}
   health: 0
-  maxHealth: 3
+  maxHealth: 5
   healthBar: {fileID: 0}
 --- !u!114 &3176051152455461670
 MonoBehaviour:

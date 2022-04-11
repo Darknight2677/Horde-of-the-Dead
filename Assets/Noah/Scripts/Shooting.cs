@@ -29,7 +29,7 @@ public class Shooting : MonoBehaviour
             Shoot();
         }
         CurrentBullets.text = bulletCount.ToString();
-        if (Input.GetKey(KeyCode.R) && bulletCount <= 0)
+        if (Input.GetKey(KeyCode.R))
         {
             StartCoroutine(Reload());
         }

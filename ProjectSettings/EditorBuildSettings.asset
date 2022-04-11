@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Noah/MainMenuScene.unity
+    guid: d2fcb40f91a3e6c4aa09e6d38adb519f
+  - enabled: 1
+    path: Assets/Adina/Scenes/Credit Scene.unity
+    guid: fdea7cd221fb6fa458bb800414bc8174
+  - enabled: 1
+    path: Assets/Brenden/BrendenTest.unity
+    guid: 96a48ef4f5a28ee469a74d55c3f0d6b7
   m_configObjects: {}

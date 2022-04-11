@@ -227,7 +227,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -251,9 +251,8 @@ MonoBehaviour:
   lineOfSite: 8
   attackRange: 2
   attackRate: 2
-  bulletForce: 20
   health: 0
-  maxHealth: 3
+  maxHealth: 8
   Destination: {fileID: 8108732074124241907}
   Move: {fileID: 8108732074124241420}
   Path: {fileID: 8108732074124241906}

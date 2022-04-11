@@ -5,7 +5,7 @@ using Pathfinding;
 
 public class npcShoot : MonoBehaviour
 {
-    public float speed;
+    public float backSpeed;
     private Transform Enemy;
     public float lineOfSite;
     public float shootingRange;
@@ -81,12 +81,17 @@ public class npcShoot : MonoBehaviour
         //}
         if (distanceFromTarget < shootingRange)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, Enemy.position, -1 * speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position, Enemy.position, -1 * backSpeed * Time.deltaTime);
         }
         if (bulletCount <= 0)
         {
             v2.enabled = false;
             v3.enabled = true;
+        }
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 

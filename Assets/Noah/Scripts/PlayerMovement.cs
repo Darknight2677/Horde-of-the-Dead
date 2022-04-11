@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -38,6 +39,16 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsWalking", true);
         }
         else anim.SetBool("IsWalking", false);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenuScene");
+        }
+
+        if (health <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     private void FixedUpdate()
@@ -55,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
         {
             health--;
             healthBar.SetHealth(health);
+
         }
     }
 }

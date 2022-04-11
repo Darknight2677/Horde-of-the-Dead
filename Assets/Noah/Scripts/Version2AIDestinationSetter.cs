@@ -32,7 +32,13 @@ namespace Pathfinding
 			if (ai != null) ai.onSearchPath += Update;
 		}
 
-		void OnDisable()
+        void Start()
+        {
+			V2 = GetComponent<Version2AIDestinationSetter>();
+			V3 = GetComponent<Version3AIDestinationSetter>();
+		}
+
+        void OnDisable()
 		{
 			if (ai != null) ai.onSearchPath -= Update;
 		}
