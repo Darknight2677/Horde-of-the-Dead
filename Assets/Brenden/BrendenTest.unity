@@ -26374,8 +26374,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 1.8}
   m_EdgeRadius: 0
---- !u!61 &4019149960068559783
-BoxCollider2D:
+--- !u!60 &4019149960068559783
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26397,9 +26397,19 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6147082, y: 1.1922047}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.13387543, y: 0.4670645}
+      - {x: 0.00019160972, y: 0.47999996}
+      - {x: -0.1311942, y: 0.47047934}
+      - {x: -0.20049602, y: 0.45381823}
+      - {x: -0.26999998, y: 0.41287616}
+      - {x: -0.26999998, y: -0.4441085}
+      - {x: -0.24840358, y: -0.46323717}
+      - {x: 0.24894233, y: -0.46336725}
+      - {x: 0.26999998, y: -0.44211304}
+      - {x: 0.27080843, y: 0.41421595}
+      - {x: 0.20230064, y: 0.45170373}
 --- !u!114 &4019149960068559784
 MonoBehaviour:
   m_ObjectHideFlags: 0
