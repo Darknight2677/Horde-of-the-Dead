@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: ea2aa7e6925bae94bb389669589dff11
+guid: 5e4383308aabebe4f8301eb53bc1d126
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2264226659488347903
-    second: walking_resized_0
+      213: 933962624347994699
+    second: spurt_sprite_sheet_resized_0
   - first:
-      213: 7547245286948064509
-    second: walking_resized_1
+      213: 3493087595870688578
+    second: spurt_sprite_sheet_resized_1
   - first:
-      213: -8893775783828665972
-    second: walking_resized_2
+      213: -7556136080831645420
+    second: spurt_sprite_sheet_resized_2
   - first:
-      213: 792743194419011766
-    second: walking_resized_3
+      213: 7541743632476208745
+    second: spurt_sprite_sheet_resized_3
   - first:
-      213: -828985903107644985
-    second: walking_resized_4
+      213: -3204477038680628212
+    second: spurt_sprite_sheet_resized_4
   - first:
-      213: 4774351122218774981
-    second: walking_resized_5
+      213: 7787376866622030853
+    second: spurt_sprite_sheet_resized_5
+  - first:
+      213: 8534154082407496689
+    second: spurt_sprite_sheet_resized_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -141,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_resized_0
+      name: spurt_sprite_sheet_resized_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 340
-        height: 300
+        width: 100
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6b5c186262c6f10800000000000000
-      internalID: 2264226659488347903
+      spriteID: b4af0c9fe0a16fc00800000000000000
+      internalID: 933962624347994699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_1
+      name: spurt_sprite_sheet_resized_1
       rect:
         serializedVersion: 2
-        x: 340
+        x: 100
         y: 0
-        width: 340
-        height: 300
+        width: 100
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfcc749f9933db860800000000000000
-      internalID: 7547245286948064509
+      spriteID: 245123949a0f97030800000000000000
+      internalID: 3493087595870688578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_2
+      name: spurt_sprite_sheet_resized_2
       rect:
         serializedVersion: 2
-        x: 680
+        x: 200
         y: 0
-        width: 340
-        height: 300
+        width: 100
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c89cbecbb06f29480800000000000000
-      internalID: -8893775783828665972
+      spriteID: 4197483c446332790800000000000000
+      internalID: -7556136080831645420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_3
+      name: spurt_sprite_sheet_resized_3
       rect:
         serializedVersion: 2
-        x: 1020
+        x: 300
         y: 0
-        width: 340
-        height: 300
+        width: 100
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b024753cb3600b00800000000000000
-      internalID: 792743194419011766
+      spriteID: 96efec830e7a9a860800000000000000
+      internalID: 7541743632476208745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_4
+      name: spurt_sprite_sheet_resized_4
       rect:
         serializedVersion: 2
-        x: 1360
+        x: 400
         y: 0
-        width: 340
-        height: 300
+        width: 100
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c1667996b9de74f0800000000000000
-      internalID: -828985903107644985
+      spriteID: c04ab828c196783d0800000000000000
+      internalID: -3204477038680628212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_5
+      name: spurt_sprite_sheet_resized_5
       rect:
         serializedVersion: 2
-        x: 1700
+        x: 500
         y: 0
-        width: 340
-        height: 300
+        width: 100
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,8 +263,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c176d0dc07e14240800000000000000
-      internalID: 4774351122218774981
+      spriteID: 504c91b3002521c60800000000000000
+      internalID: 7787376866622030853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spurt_sprite_sheet_resized_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb395c0ce76f6670800000000000000
+      internalID: 8534154082407496689
       vertices: []
       indices: 
       edges: []

@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: ea2aa7e6925bae94bb389669589dff11
+guid: 50594c5beb927844d83e86ea9e1a9bcb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2264226659488347903
-    second: walking_resized_0
+      213: -1222518507055095602
+    second: Fast_zombie_walking_sprite_sheet_resized_0
   - first:
-      213: 7547245286948064509
-    second: walking_resized_1
+      213: -5493518602359373698
+    second: Fast_zombie_walking_sprite_sheet_resized_1
   - first:
-      213: -8893775783828665972
-    second: walking_resized_2
+      213: -4194114120544003745
+    second: Fast_zombie_walking_sprite_sheet_resized_2
   - first:
-      213: 792743194419011766
-    second: walking_resized_3
+      213: -4798344892441922285
+    second: Fast_zombie_walking_sprite_sheet_resized_3
   - first:
-      213: -828985903107644985
-    second: walking_resized_4
+      213: 7227603262995699411
+    second: Fast_zombie_walking_sprite_sheet_resized_4
   - first:
-      213: 4774351122218774981
-    second: walking_resized_5
+      213: -6851321555231720517
+    second: Fast_zombie_walking_sprite_sheet_resized_5
+  - first:
+      213: 7124543287959682436
+    second: Fast_zombie_walking_sprite_sheet_resized_6
+  - first:
+      213: 6001742077956793824
+    second: Fast_zombie_walking_sprite_sheet_resized_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,65 +95,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_resized_0
+      name: Fast_zombie_walking_sprite_sheet_resized_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 340
-        height: 300
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6b5c186262c6f10800000000000000
-      internalID: 2264226659488347903
+      spriteID: ec0e3af15edb80fe0800000000000000
+      internalID: -1222518507055095602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_1
+      name: Fast_zombie_walking_sprite_sheet_resized_1
       rect:
         serializedVersion: 2
-        x: 340
+        x: 310
         y: 0
-        width: 340
-        height: 300
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfcc749f9933db860800000000000000
-      internalID: 7547245286948064509
+      spriteID: e708e53efe913c3b0800000000000000
+      internalID: -5493518602359373698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_2
+      name: Fast_zombie_walking_sprite_sheet_resized_2
       rect:
         serializedVersion: 2
-        x: 680
+        x: 620
         y: 0
-        width: 340
-        height: 300
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c89cbecbb06f29480800000000000000
-      internalID: -8893775783828665972
+      spriteID: f595681cd638bc5c0800000000000000
+      internalID: -4194114120544003745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_3
+      name: Fast_zombie_walking_sprite_sheet_resized_3
       rect:
         serializedVersion: 2
-        x: 1020
+        x: 930
         y: 0
-        width: 340
-        height: 300
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b024753cb3600b00800000000000000
-      internalID: 792743194419011766
+      spriteID: 31570383ebad86db0800000000000000
+      internalID: -4798344892441922285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_4
+      name: Fast_zombie_walking_sprite_sheet_resized_4
       rect:
         serializedVersion: 2
-        x: 1360
+        x: 1240
         y: 0
-        width: 340
-        height: 300
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c1667996b9de74f0800000000000000
-      internalID: -828985903107644985
+      spriteID: 3d6105ccfda9d4460800000000000000
+      internalID: 7227603262995699411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_resized_5
+      name: Fast_zombie_walking_sprite_sheet_resized_5
       rect:
         serializedVersion: 2
-        x: 1700
+        x: 1550
         y: 0
-        width: 340
-        height: 300
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,8 +218,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c176d0dc07e14240800000000000000
-      internalID: 4774351122218774981
+      spriteID: bbbbf6a68573be0a0800000000000000
+      internalID: -6851321555231720517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fast_zombie_walking_sprite_sheet_resized_6
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 0
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dfab97f567fd260800000000000000
+      internalID: 7124543287959682436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fast_zombie_walking_sprite_sheet_resized_7
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 0
+        width: 310
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5212e0f987a4350800000000000000
+      internalID: 6001742077956793824
       vertices: []
       indices: 
       edges: []
