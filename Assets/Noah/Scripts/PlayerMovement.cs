@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public int maxHealth = 3;
     public HealthBar healthBar;
 
+    private GameObject[] BossEnemies;
+
     public void Start()
     {
         health = maxHealth;
@@ -49,6 +51,14 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        BossEnemies = GameObject.FindGameObjectsWithTag("BossEnemies");
+
+        if(BossEnemies == null)
+        {
+            SceneManager.LoadScene("MainMenuScene");
+        }
+
     }
 
     private void FixedUpdate()
