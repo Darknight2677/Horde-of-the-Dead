@@ -81,10 +81,13 @@ public class EnemyCombat : MonoBehaviour
                 anim.SetBool("Attacking", false);
             }
         }
+    }
 
+    private void LateUpdate()
+    {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 
