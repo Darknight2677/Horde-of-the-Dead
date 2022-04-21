@@ -20,7 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public int maxHealth = 3;
     public HealthBar healthBar;
 
-    private GameObject[] BossEnemies;
+    public int HordeDefeated = 0;
+    public int HordeNeededToDefeat;
 
     public void Start()
     {
@@ -52,12 +53,12 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        BossEnemies = GameObject.FindGameObjectsWithTag("BossEnemies");
-
-        if(BossEnemies == null)
+        if(HordeDefeated == HordeNeededToDefeat)
         {
             SceneManager.LoadScene("MainMenuScene");
         }
+
+
 
     }
 
