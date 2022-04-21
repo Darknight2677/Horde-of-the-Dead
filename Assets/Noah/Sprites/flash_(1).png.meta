@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 58878eade868f444b93cb35629e3889a
+guid: 04e44f391d716214bb0c7e1fb730b42f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -971390340114725862
-    second: Walk_Cycle_with_weapon_sprite_sheet_resized 1_0
+      213: -2673215494696347712
+    second: flash_(1)_0
   - first:
-      213: 5679914405417070310
-    second: Walk_Cycle_with_weapon_sprite_sheet_resized 1_1
+      213: -6009295276573474247
+    second: flash_(1)_1
   - first:
-      213: -4586263673203789744
-    second: Walk_Cycle_with_weapon_sprite_sheet_resized 1_2
+      213: -604061321651231673
+    second: flash_(1)_2
   - first:
-      213: 8384441356490852944
-    second: Walk_Cycle_with_weapon_sprite_sheet_resized 1_3
+      213: 1485676964151789188
+    second: flash_(1)_3
+  - first:
+      213: 7566683847716689106
+    second: flash_(1)_4
+  - first:
+      213: -4741507199646807097
+    second: flash_(1)_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -87,85 +93,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_Cycle_with_weapon_sprite_sheet_resized 1_0
+      name: flash_(1)_0
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 119
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7dd8ebba4d6ead0800000000000000
+      internalID: -2673215494696347712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_(1)_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 50
+        width: 48.666668
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932c769d8c1ba9ca0800000000000000
+      internalID: -6009295276573474247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_(1)_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48.666668
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744ec6cad61fd97f0800000000000000
+      internalID: -604061321651231673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_(1)_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 119
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4868f33d35f2e9410800000000000000
+      internalID: 1485676964151789188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_(1)_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 119
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4d6d69ed2420960800000000000000
+      internalID: 7566683847716689106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_(1)_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 200
-        height: 340
-      alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+        width: 48.666668
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a14473fd1ade482f0800000000000000
-      internalID: -971390340114725862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Cycle_with_weapon_sprite_sheet_resized 1_1
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 200
-        height: 340
-      alignment: 9
-      pivot: {x: 0.5, y: 0.35}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ee2289ee0c13de40800000000000000
-      internalID: 5679914405417070310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Cycle_with_weapon_sprite_sheet_resized 1_2
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 200
-        height: 340
-      alignment: 9
-      pivot: {x: 0.5, y: 0.35}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 050f8600d715a50c0800000000000000
-      internalID: -4586263673203789744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Cycle_with_weapon_sprite_sheet_resized 1_3
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 0
-        width: 200
-        height: 340
-      alignment: 9
-      pivot: {x: 0.5, y: 0.35}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05a4bb5bdf48b5470800000000000000
-      internalID: 8384441356490852944
+      spriteID: 7cb4811d258c23eb0800000000000000
+      internalID: -4741507199646807097
       vertices: []
       indices: 
       edges: []
