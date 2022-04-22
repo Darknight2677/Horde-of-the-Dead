@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -971390340114725862, guid: 8de9d5a48bccc574596f2e511c87e0ac,
+  m_Sprite: {fileID: -6134661853339065399, guid: 3350f47dd48068e45b7a02b2b8bad42e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   fireRate: 1
   bulletForce: 20
   health: 0
-  maxHealth: 3
+  maxHealth: 1
   enemyContact: 0
   bulletCount: 0
   maxBulletCount: 30

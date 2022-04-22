@@ -119,6 +119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 2618745270907673839, guid: c37a6576c32044e49b4e3d7ac410bdf1,
     type: 3}
+  objectHitEffect: {fileID: 1810904642058594363, guid: 198a0d6373f19a544828e81fa04c0461,
+    type: 3}
 --- !u!61 &6998317016547595210
 BoxCollider2D:
   m_ObjectHideFlags: 0

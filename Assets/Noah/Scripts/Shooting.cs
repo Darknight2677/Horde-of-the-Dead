@@ -14,11 +14,17 @@ public class Shooting : MonoBehaviour
     public int bulletCount;
     public int maxBulletCount = 30;
     public Text CurrentBullets;
+
+    //private FireAnimation FA;
+
     //public Text MaxBullets;
     void Start()
     {
-        
+
+        //FA = gameObject.GetComponent<FireAnimation>();
+
         bulletCount = maxBulletCount;
+
     }
     //public int damage = 40;
     // Update is called once per frame
@@ -38,6 +44,7 @@ public class Shooting : MonoBehaviour
         {
             if (bulletCount > 0)
             {
+                //FA.anim.SetBool("Shoot", true);
                 GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
                 Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
                 rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
