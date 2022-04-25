@@ -16,6 +16,7 @@ public class npcMovement : MonoBehaviour
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        aIPath = gameObject.GetComponent<AIPath>();
     }
 
     // Update is called once per frame
