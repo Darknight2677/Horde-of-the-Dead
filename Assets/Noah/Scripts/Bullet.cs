@@ -7,28 +7,29 @@ public class Bullet : MonoBehaviour
 
     public GameObject hitEffect;
     public GameObject objectHitEffect;
+    public float effectLasting = 0.07f;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Enemy")
         {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(effect, 0.1f);
+            Destroy(effect, effectLasting);
         }
         else if (collision.gameObject.tag == "NPC")
         {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(effect, 0.1f);
+            Destroy(effect, effectLasting);
         }
         else if (collision.gameObject.tag == "Player")
         {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(effect, 0.1f);
+            Destroy(effect, effectLasting);
         }
         else
         {
             GameObject effect = Instantiate(objectHitEffect, transform.position, Quaternion.identity);
-            Destroy(effect, 0.1f);
+            Destroy(effect, effectLasting);
         }
         Destroy(gameObject);
     }

@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    float speedLimiter = 0.8f;
 
     public Rigidbody2D rb;
     public Camera cam;
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         health = maxHealth;
         anim = gameObject.GetComponent<Animator>();
         healthBar.SetMaxHealth(maxHealth);
+        rb = gameObject.GetComponent<Rigidbody2D>();
     }
     // Update is called once per frame
     private void Update()
@@ -39,9 +41,19 @@ public class PlayerMovement : MonoBehaviour
 
         if (movement.x != 0 || movement.y != 0)
         {
+            if (movement.x != 0 && movement.y != 0)
+            {
+                movement.x *= speedLimiter;
+                movement.y *= speedLimiter;
+            }
             anim.SetBool("IsWalking", true);
+            rb.velocity = new Vector2(movement.x * moveSpeed, movement.y * moveSpeed);
         }
-        else anim.SetBool("IsWalking", false);
+        else
+        {
+            anim.SetBool("IsWalking", false);
+            rb.velocity = new Vector2(0f, 0f);
+        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
