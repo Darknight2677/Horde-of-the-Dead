@@ -20,7 +20,7 @@ public class DialogManager : MonoBehaviour
     public void ShowDialog(Dialog dialog)
     {
         dialogBox.SetActive(true);
-        StartCoroutine(TypeDialog(dialog.Lines[0]));
+        //StartCoroutine(TypeDialog(dialog.Lines[0]));
     }
 
     public IEnumerator TypeDialog(string dialog)

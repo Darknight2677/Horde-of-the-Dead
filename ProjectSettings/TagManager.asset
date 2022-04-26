@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Ground
   - Enemy
-  - Bullet
   - NPC
   - Caravan
   - BossEnemies
   - EndPoint
+  - Bullet
+  - bullet
   layers:
   - Default
   - TransparentFX
@@ -25,9 +26,9 @@ TagManager:
   - Character
   - Player
   - Truck
-  - 
-  - 
-  - 
+  - Gate
+  - Bullet
+  - Caravan
   - 
   - 
   - 
