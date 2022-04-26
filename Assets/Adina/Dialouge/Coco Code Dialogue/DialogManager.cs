@@ -14,7 +14,7 @@ public class DialogManager : MonoBehaviour
 
     private void Awake()
     {
-
+        Instance = this;
     }
 
     public void ShowDialog(Dialog dialog)
