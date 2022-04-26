@@ -13,7 +13,7 @@ public class CaravanMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        aIPath = gameObject.GetComponent<AIPath>();
     }
 
     // Update is called once per frame
@@ -24,8 +24,8 @@ public class CaravanMovement : MonoBehaviour
 
     void faceVelocity()
     {
-        direction = aIPath.desiredVelocity;
+        //direction = aIPath.desiredVelocity;
 
-        transform.right = direction;
+        //transform.right = direction;
     }
 }

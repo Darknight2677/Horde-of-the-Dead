@@ -10,6 +10,7 @@ TagManager:
   - NPC
   - Caravan
   - BossEnemies
+  - EndPoint
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Enviroment
   - Character
   - Player
-  - 
+  - Truck
   - 
   - 
   - 
