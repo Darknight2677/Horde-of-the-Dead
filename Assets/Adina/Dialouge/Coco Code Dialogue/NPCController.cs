@@ -5,9 +5,9 @@ using TMPro;
 
 public class NPCController : MonoBehaviour
 {
-    [SerializeField] Dialog dialog;
+    [SerializeField] Dialogue dialogue;
     public void Interact()
     {
-        DialogManager.Instance.ShowDialog(dialog);
+        DialogManager.Instance.ShowDialog(dialogue);
     }
 }

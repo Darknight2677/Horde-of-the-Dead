@@ -17,10 +17,10 @@ public class DialogManager : MonoBehaviour
         Instance = this;
     }
 
-    public void ShowDialog(Dialog dialog)
+    public void ShowDialog(Dialogue dialogue)
     {
         dialogBox.SetActive(true);
-        StartCoroutine(TypeDialog(dialog.Lines[0]));
+        StartCoroutine(TypeDialog(dialogue.Lines[0]));
     }
 
     public IEnumerator TypeDialog(string dialog)
