@@ -23,16 +23,16 @@ public class npcShoot : MonoBehaviour
     private GameObject[] multipleEnemies;
     public bool enemyContact;
 
-    public int bulletCount;
-    public int maxBulletCount = 30;
+    //public int bulletCount;
+    //public int maxBulletCount = 30;
 
-    public Version2AIDestinationSetter v2;
-    public Version3AIDestinationSetter v3;
+    //public Version2AIDestinationSetter v2;
+    //public Version3AIDestinationSetter v3;
 
     // Start is called before the first frame update
     void Start()
     {
-        bulletCount = maxBulletCount;
+        //bulletCount = maxBulletCount;
         health = maxHealth;
         Enemy = null;
         enemyContact = false;
@@ -65,7 +65,7 @@ public class npcShoot : MonoBehaviour
             //    Shoot();
             //}
 
-            if (nextFireTime < Time.time && bulletCount > 0)
+            if (nextFireTime < Time.time)// && bulletCount > 0)
             {
                 nextFireTime = Time.time + fireRate;
                 Shoot();
@@ -83,11 +83,11 @@ public class npcShoot : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, Enemy.position, -1 * backSpeed * Time.deltaTime);
         }
-        if (bulletCount <= 0)
-        {
-            v2.enabled = false;
-            v3.enabled = true;
-        }
+        //if (bulletCount <= 0)
+        //{
+        //    v2.enabled = false;
+        //    v3.enabled = true;
+        //}
 
         if (health <= 0)
         {
@@ -108,20 +108,30 @@ public class npcShoot : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(enemyBulletParent.up * bulletForce, ForceMode2D.Impulse);
         Destroy(bullet, 5f);
-        bulletCount--;
+        //bulletCount--;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.layer == 14)
         {
-            health--;
+            health -= 2;
             //healthBar.SetHealth(health);
         }
-        if(collision.gameObject.tag == "Caravan" && bulletCount <= 0)
+        if (collision.gameObject.layer == 15)
         {
-            bulletCount = maxBulletCount;
+            health -= 1;
+            //healthBar.SetHealth(health);
         }
+        if (collision.gameObject.layer == 16)
+        {
+            health -= 4;
+            //healthBar.SetHealth(health);
+        }
+        //if(collision.gameObject.tag == "Caravan" && bulletCount <= 0)
+        //{
+        //    bulletCount = maxBulletCount;
+        //}
     }
 
     Transform FindClosestNPC()
