@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00730d26430e2034c8ab17b1c3b58e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1 &3176051152455461665
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +241,7 @@ MonoBehaviour:
   rb: {fileID: 3176051152455461667}
   cam: {fileID: 0}
   health: 0
-  maxHealth: 5
+  maxHealth: 10
   healthBar: {fileID: 0}
   HordeDefeated: 0
   HordeNeededToDefeat: 2

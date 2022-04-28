@@ -5,10 +5,10 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
 
-public class WallHealth : MonoBehaviour
+public class CaravanHealth : MonoBehaviour
 {
     public int health;
-    public int maxHealth = 140;
+    public int maxHealth = 3;
     //public HealthBar healthBar;
 
     public void Start()
@@ -22,6 +22,7 @@ public class WallHealth : MonoBehaviour
         if (health <= 0)
         {
             Destroy(this.gameObject);
+            SceneManager.LoadScene("MainMenuScene");
         }
     }
 
@@ -48,4 +49,3 @@ public class WallHealth : MonoBehaviour
         //}
     }
 }
-
