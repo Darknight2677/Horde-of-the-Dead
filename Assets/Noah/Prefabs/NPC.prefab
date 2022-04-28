@@ -213,12 +213,8 @@ MonoBehaviour:
   fireRate: 1
   bulletForce: 20
   health: 0
-  maxHealth: 1
+  maxHealth: 4
   enemyContact: 0
-  bulletCount: 0
-  maxBulletCount: 30
-  v2: {fileID: 3786207829382179495}
-  v3: {fileID: 3786207829382179494}
 --- !u!50 &3786207829382179492
 Rigidbody2D:
   serializedVersion: 4

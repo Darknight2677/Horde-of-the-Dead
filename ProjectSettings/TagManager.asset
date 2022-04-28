@@ -11,6 +11,7 @@ TagManager:
   - Caravan
   - BossEnemies
   - EndPoint
+  - bullet
   layers:
   - Default
   - TransparentFX
@@ -26,9 +27,9 @@ TagManager:
   - Player
   - Truck
   - Interactable
-  - 
-  - 
-  - 
+  - Enemy
+  - FastEnemy
+  - TankEnemy
   - 
   - 
   - 

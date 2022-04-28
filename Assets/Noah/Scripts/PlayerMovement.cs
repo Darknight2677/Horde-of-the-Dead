@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    float speedLimiter = 0.8f;
+    float speedLimiter = 0.7f;
 
     public Rigidbody2D rb;
     public Camera cam;
@@ -85,20 +85,28 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.layer == 14)
         {
-            health--;
+            health -= 2;
             healthBar.SetHealth(health);
-
+        }
+        if (collision.gameObject.layer == 15)
+        {
+            health -= 1;
+            healthBar.SetHealth(health);
+        }
+        if (collision.gameObject.layer == 16)
+        {
+            health -= 4;
+            healthBar.SetHealth(health);
         }
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.layer == 13)
-    //    {
-    //        Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-    //    }
-    //}
+        //private void OnCollisionEnter2D(Collision2D collision)
+        //{
+        //    if (collision.gameObject.layer == 13)
+        //    {
+        //        Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        //    }
+        //}
 }
 

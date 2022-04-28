@@ -16,12 +16,20 @@ public class GateV2 : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    IEnumerator OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "NPC")
         {
-            //yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(5f);
             GetComponent<BoxCollider2D>().enabled = true;
         }
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if(collision.gameObject.tag == "NPC")
+    //    {
+
+    //    }
+    //}
 }
