@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    float speedLimiter = 0.8f;
+    float speedLimiter = 0.7f;
 
     public Rigidbody2D rb;
     public Camera cam;

@@ -104,7 +104,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.3}
+  m_Offset: {x: 0, y: 1.6}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -252,7 +252,7 @@ MonoBehaviour:
   attackRange: 2
   attackRate: 2
   health: 0
-  maxHealth: 8
+  maxHealth: 4
   Destination: {fileID: 3164075808751581237}
   Move: {fileID: 3164075808751581642}
   Path: {fileID: 3164075808751581236}
