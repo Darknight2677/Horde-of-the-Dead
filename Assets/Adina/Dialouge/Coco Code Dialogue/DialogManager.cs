@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DialogManager : MonoBehaviour
 {
     [SerializeField] GameObject dialogBox;
-    [SerializeField] Text dialogText;
+    [SerializeField] TMP_Text dialogText;
     [SerializeField] int lettersPerSecond;
 
     public static DialogManager Instance { get; private set; }
