@@ -1,14 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-[System.Serializable]
-public class Dialogue
+
+public class Dialogue : MonoBehaviour
 {
-    [SerializeField] List<string> lines;
+    public TextMeshProUGUI textDisplay;
+    public string[] sentences;
+    private int index;
+    public float typingSpeed;
 
-    public List<string> Lines
+    void Start()
     {
-        get { return lines; }
+        StartCoroutine(Type());
+    }
+
+    IEnumerator Type()
+    {
+        foreach(char letter in sentences[index].ToCharArray())
+        {
+            textDisplay.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
     }
 }
