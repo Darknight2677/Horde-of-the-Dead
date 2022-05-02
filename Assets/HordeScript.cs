@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class HordeScript : MonoBehaviour
 {
-    private EnemyCombat EC;
+    private HordeCombat EC;
     public PlayerMovement PM;
 
     // Start is called before the first frame update
     void Start()
     {
-        EC = gameObject.GetComponent<EnemyCombat>();
+        EC = gameObject.GetComponent<HordeCombat>();
     }
 
     // Update is called once per frame
