@@ -8,13 +8,14 @@ using UnityEngine.SceneManagement;
 public class CaravanHealth : MonoBehaviour
 {
     public int health;
-    public int maxHealth = 3;
+    public int maxHealth = 70;
+    public HealthBar healthBar;
     //public HealthBar healthBar;
 
     public void Start()
     {
         health = maxHealth;
-        //healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetMaxHealth(maxHealth);
     }
     // Update is called once per frame
     private void Update()
@@ -31,17 +32,17 @@ public class CaravanHealth : MonoBehaviour
         if (collision.gameObject.layer == 14)
         {
             health -= 2;
-            //healthBar.SetHealth(health);
+            healthBar.SetHealth(health);
         }
         if (collision.gameObject.layer == 15)
         {
             health -= 1;
-            //healthBar.SetHealth(health);
+            healthBar.SetHealth(health);
         }
         if (collision.gameObject.layer == 16)
         {
             health -= 4;
-            //healthBar.SetHealth(health);
+            healthBar.SetHealth(health);
         }
         //if(collision.gameObject.tag == "Caravan" && bulletCount <= 0)
         //{
