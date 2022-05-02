@@ -47,5 +47,14 @@ public class WallHealth : MonoBehaviour
         //    bulletCount = maxBulletCount;
         //}
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
+    }
 }
 

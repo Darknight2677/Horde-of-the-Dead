@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Brenden/BrendenTest.unity
     guid: 96a48ef4f5a28ee469a74d55c3f0d6b7
+  - enabled: 1
+    path: Assets/Adina/Scenes/CREDIT HELP.unity
+    guid: 9129a84cacf47cd4fa7b8b9de5c0ba04
   m_configObjects: {}
