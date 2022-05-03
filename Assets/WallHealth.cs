@@ -15,7 +15,7 @@ public class WallHealth : MonoBehaviour
     {
         health = maxHealth;
         //healthBar.SetMaxHealth(maxHealth);
-        GetComponent<PolygonCollider2D>().enabled = true;
+        GetComponent<BoxCollider2D>().enabled = true;
     }
     // Update is called once per frame
     private void Update()
@@ -50,11 +50,11 @@ public class WallHealth : MonoBehaviour
 
         if (collision.gameObject.tag == "Bullet")
         {
-            GetComponent<PolygonCollider2D>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
         }
         if (collision.gameObject.tag == "Player")
         {
-            GetComponent<PolygonCollider2D>().enabled = true;
+            GetComponent<BoxCollider2D>().enabled = true;
         }
     }
 
@@ -62,7 +62,7 @@ public class WallHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            GetComponent<PolygonCollider2D>().enabled = true;
+            GetComponent<BoxCollider2D>().enabled = true;
         }
     }
 
@@ -70,7 +70,7 @@ public class WallHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            GetComponent<PolygonCollider2D>().enabled = true;
+            GetComponent<BoxCollider2D>().enabled = true;
         }
     }
 
