@@ -11,10 +11,6 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.layer == 17)
-        {
-            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-        }
         if(collision.gameObject.tag == "Enemy")
         {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);

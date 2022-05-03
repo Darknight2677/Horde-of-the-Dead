@@ -1256,6 +1256,7 @@ GameObject:
   - component: {fileID: 60055697}
   - component: {fileID: 60055699}
   - component: {fileID: 60055696}
+  - component: {fileID: 60055700}
   m_Layer: 17
   m_Name: fence_with_rust_metal_resized (2)
   m_TagString: NPC
@@ -1477,6 +1478,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 140
+--- !u!61 &60055700
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60055695}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.7, y: 2.4}
+    newSize: {x: 5.7, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.7, y: 2.4}
+  m_EdgeRadius: 0
 --- !u!1 &76483255
 GameObject:
   m_ObjectHideFlags: 0
@@ -34953,6 +34980,7 @@ GameObject:
   - component: {fileID: 1146409769}
   - component: {fileID: 1146409771}
   - component: {fileID: 1146409768}
+  - component: {fileID: 1146409772}
   m_Layer: 17
   m_Name: fence_with_rust_metal_resized (3)
   m_TagString: NPC
@@ -35174,6 +35202,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 140
+--- !u!61 &1146409772
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146409767}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.7, y: 2.4}
+    newSize: {x: 5.7, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.7, y: 2.4}
+  m_EdgeRadius: 0
 --- !u!1 &1151740763
 GameObject:
   m_ObjectHideFlags: 0
@@ -44099,6 +44153,7 @@ GameObject:
   - component: {fileID: 1550065637}
   - component: {fileID: 1550065639}
   - component: {fileID: 1550065636}
+  - component: {fileID: 1550065640}
   m_Layer: 17
   m_Name: fence_with_rust_metal_resized
   m_TagString: NPC
@@ -44320,6 +44375,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 140
+--- !u!61 &1550065640
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550065635}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.7, y: 2.4}
+    newSize: {x: 5.7, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.7, y: 2.4}
+  m_EdgeRadius: 0
 --- !u!1 &1557040195
 GameObject:
   m_ObjectHideFlags: 0
@@ -54975,6 +55056,7 @@ GameObject:
   - component: {fileID: 2066563410}
   - component: {fileID: 2066563412}
   - component: {fileID: 2066563409}
+  - component: {fileID: 2066563413}
   m_Layer: 17
   m_Name: fence_with_rust_metal_resized (1)
   m_TagString: NPC
@@ -55196,6 +55278,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 140
+--- !u!61 &2066563413
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066563408}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.7, y: 2.4}
+    newSize: {x: 5.7, y: 2.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.7, y: 2.4}
+  m_EdgeRadius: 0
 --- !u!1 &2068169886
 GameObject:
   m_ObjectHideFlags: 0

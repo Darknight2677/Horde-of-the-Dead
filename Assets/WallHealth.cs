@@ -15,6 +15,7 @@ public class WallHealth : MonoBehaviour
     {
         health = maxHealth;
         //healthBar.SetMaxHealth(maxHealth);
+        GetComponent<PolygonCollider2D>().enabled = false;
     }
     // Update is called once per frame
     private void Update()
@@ -46,15 +47,20 @@ public class WallHealth : MonoBehaviour
         //{
         //    bulletCount = maxBulletCount;
         //}
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
 
         if (collision.gameObject.tag == "Bullet")
         {
-            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+            GetComponent<PolygonCollider2D>().enabled = false;
+        }
+        else if (collision.gameObject.tag == "Player")
+        {
+            GetComponent<PolygonCollider2D>().enabled = true;
+        }
+        else
+        {
+            GetComponent<PolygonCollider2D>().enabled = true;
         }
     }
+
 }
 
