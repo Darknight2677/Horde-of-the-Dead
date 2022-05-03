@@ -15,6 +15,8 @@ public class Shooting : MonoBehaviour
     public int maxBulletCount = 30;
     public Text CurrentBullets;
 
+    private bool reloading;
+
     //private FireAnimation FA;
 
     //public Text MaxBullets;
@@ -42,7 +44,7 @@ public class Shooting : MonoBehaviour
 
         void Shoot()
         {
-            if (bulletCount > 0)
+            if (bulletCount > 0 && reloading == false)
             {
                 //FA.anim.SetBool("Shoot", true);
                 GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
@@ -66,8 +68,10 @@ public class Shooting : MonoBehaviour
 
         IEnumerator Reload()
         {
+            reloading = true;
             yield return new WaitForSeconds(1.5f);
             bulletCount = maxBulletCount;
+            reloading = false;
         }
     }
 }

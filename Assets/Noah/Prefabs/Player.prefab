@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 3176051152455461670}
   - component: {fileID: 3176051152455461672}
   - component: {fileID: 629795314}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ MonoBehaviour:
   maxHealth: 15
   healthBar: {fileID: 0}
   HordeDefeated: 0
-  HordeNeededToDefeat: 2
+  HordeNeededToDefeat: 24
 --- !u!114 &3176051152455461670
 MonoBehaviour:
   m_ObjectHideFlags: 0

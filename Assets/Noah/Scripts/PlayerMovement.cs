@@ -55,10 +55,10 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(0f, 0f);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("MainMenuScene");
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    SceneManager.LoadScene("MainMenuScene");
+        //}
 
         if (health <= 0)
         {
@@ -100,6 +100,12 @@ public class PlayerMovement : MonoBehaviour
             health -= 4;
             healthBar.SetHealth(health);
         }
+
+        if (collision.gameObject.tag == "HealthPack")
+        {
+            health = maxHealth;
+        }
+
     }
         //private void OnCollisionEnter2D(Collision2D collision)
         //{

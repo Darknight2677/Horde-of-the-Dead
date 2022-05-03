@@ -121,7 +121,7 @@ MonoBehaviour:
     type: 3}
   objectHitEffect: {fileID: 1810904642058594363, guid: 198a0d6373f19a544828e81fa04c0461,
     type: 3}
-  effectLasting: 0.07
+  effectLasting: 0.09
 --- !u!61 &6998317016547595210
 BoxCollider2D:
   m_ObjectHideFlags: 0

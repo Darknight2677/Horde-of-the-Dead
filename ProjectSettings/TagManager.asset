@@ -12,6 +12,7 @@ TagManager:
   - BossEnemies
   - EndPoint
   - bullet
+  - HealthPack
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - Enemy
   - FastEnemy
   - TankEnemy
-  - 
+  - ScrapFence
   - 
   - 
   - 
