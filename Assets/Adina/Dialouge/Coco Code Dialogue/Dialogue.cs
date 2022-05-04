@@ -13,14 +13,17 @@ public class Dialogue : MonoBehaviour
 
     public GameObject continueButton;
 
+    public bool dialogueFinished;
+
     void Start()
     {
         StartCoroutine(Type());
+        dialogueFinished = false;
     }
 
     void Update()
     {
-        if(textDisplay.text == sentences[index])
+        if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
         }
@@ -28,7 +31,7 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator Type()
     {
-        foreach(char letter in sentences[index].ToCharArray())
+        foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
@@ -39,16 +42,18 @@ public class Dialogue : MonoBehaviour
     {
         continueButton.SetActive(false);
 
-        if(index < sentences.Length - 1)
+        if (index < sentences.Length - 1)
         {
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
+            //dialogueFinished = false;
         }
         else
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
+            dialogueFinished = true;
         }
     }
 }
