@@ -17,8 +17,8 @@ public class Dialogue : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(Type());
         dialogueFinished = false;
+        StartCoroutine(Type());
     }
 
     void Update()

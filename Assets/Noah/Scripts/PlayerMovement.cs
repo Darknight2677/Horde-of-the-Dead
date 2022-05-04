@@ -55,10 +55,10 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(0f, 0f);
         }
 
-        //if (Input.GetKeyDown(KeyCode.Escape))
-        //{
-        //    SceneManager.LoadScene("MainMenuScene");
-        //}
+        if (Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.L) && Input.GetKey(KeyCode.S))
+        {
+            this.gameObject.transform.position = new Vector3(10.7f, -153.38f, 0);
+        }
 
         if (health <= 0)
         {
