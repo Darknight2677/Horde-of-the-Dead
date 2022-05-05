@@ -1087,10 +1087,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 533238976}
   sentences:
-  - 'NPC:  Help me!'
-  - 'PLAYER:  I''m here to help!'
-  - 'NPC: Thank you for your help.'
-  - 'PLAYER: No problem.'
+  - 'NPC:  Help  me!'
+  - 'PLAYER:  I''m  here  to  help!'
+  - 'NPC:  Thank  you  for  your  help.'
+  - 'PLAYER:  No  problem.'
   typingSpeed: 0.02
   continueButton: {fileID: 1405495680}
   dialogueFinished: 0
@@ -22275,10 +22275,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 924459312}
   sentences:
-  - 'NPC:  Help me!'
-  - 'PLAYER:  I''m here to help!'
-  - 'NPC: Thank you for your help.'
-  - 'PLAYER: No problem.'
+  - 'NPC:  Help  me!'
+  - 'PLAYER:  I''m  here  to  help!'
+  - 'NPC:  Thank  you  for  your  help.'
+  - 'PLAYER:  No  problem.'
   typingSpeed: 0.02
   continueButton: {fileID: 1360301742}
   dialogueFinished: 0
@@ -28183,10 +28183,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1709427739}
   sentences:
-  - 'NPC:  Help me!'
-  - 'PLAYER:  I''m here to help!'
-  - 'NPC: Thank you for your help.'
-  - 'PLAYER: No problem.'
+  - 'NPC:  Help  me!'
+  - 'PLAYER:  I''m  here  to  help!'
+  - 'NPC:  Thank  you  for  your  help.'
+  - 'PLAYER:  No  problem.'
   typingSpeed: 0.02
   continueButton: {fileID: 247650723}
   dialogueFinished: 0
@@ -28235,10 +28235,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1920561931}
   sentences:
-  - 'NPC:  Help me!'
-  - 'PLAYER:  I''m here to help!'
-  - 'NPC: Thank you for your help.'
-  - 'PLAYER: No problem.'
+  - 'NPC:  Help  me!'
+  - 'PLAYER:  I''m  here  to  help!'
+  - 'NPC:  Thank  you  for  your  help.'
+  - 'PLAYER:  No  problem.'
   typingSpeed: 0.02
   continueButton: {fileID: 2040513207}
   dialogueFinished: 0
@@ -28356,10 +28356,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 525635682}
   sentences:
-  - 'NPC:  Help me!'
-  - 'PLAYER:  I''m here to help!'
-  - 'NPC: Thank you for your help.'
-  - 'PLAYER: No problem.'
+  - 'NPC:  Help  me!'
+  - 'PLAYER:  I''m  here  to  help!'
+  - 'NPC:  Thank  you  for  your  help.'
+  - 'PLAYER:  No  problem.'
   typingSpeed: 0.02
   continueButton: {fileID: 564193496}
   dialogueFinished: 0
@@ -35935,10 +35935,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 916152015}
   sentences:
-  - 'NPC:  Help me!'
-  - 'PLAYER:  I''m here to help!'
-  - 'NPC: Thank you for your help.'
-  - 'PLAYER: No problem.'
+  - 'NPC:  Help  me!'
+  - 'PLAYER:  I''m  here  to  help!'
+  - 'NPC:  Thank  you  for  your  help.'
+  - 'PLAYER:  No  problem.'
   typingSpeed: 0.02
   continueButton: {fileID: 1613430357}
   dialogueFinished: 0
@@ -46195,10 +46195,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1101131838}
   sentences:
-  - 'NPC:  Help me!'
-  - 'PLAYER:  I''m here to help!'
-  - 'NPC: Thank you for your help.'
-  - 'PLAYER: No problem.'
+  - 'NPC:  Help  me!'
+  - 'PLAYER:  I''m  here  to  help!'
+  - 'NPC:  Thank  you  for  your  help.'
+  - 'PLAYER:  No  problem.'
   typingSpeed: 0.02
   continueButton: {fileID: 1048115682}
   dialogueFinished: 0
