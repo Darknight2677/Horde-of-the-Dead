@@ -12,6 +12,7 @@ public class Dialogue : MonoBehaviour
     public float typingSpeed;
 
     public GameObject continueButton;
+    public GameObject textBox;
 
     public bool dialogueFinished;
 
@@ -19,6 +20,7 @@ public class Dialogue : MonoBehaviour
     {
         dialogueFinished = false;
         StartCoroutine(Type());
+        textBox.SetActive(true);
     }
 
     void Update()
@@ -48,12 +50,14 @@ public class Dialogue : MonoBehaviour
             textDisplay.text = "";
             StartCoroutine(Type());
             //dialogueFinished = false;
+            textBox.SetActive(true);
         }
         else
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
             dialogueFinished = true;
+            textBox.SetActive(false);
         }
     }
 }
