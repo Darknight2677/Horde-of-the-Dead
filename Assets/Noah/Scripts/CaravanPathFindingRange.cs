@@ -11,7 +11,7 @@ public class CaravanPathFindingRange : MonoBehaviour
 
     private AIPath ai;
     private Version4AIDestinationSetter v4;
-    private EnemyMovement mov;
+    private CaravanMovement mov;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class CaravanPathFindingRange : MonoBehaviour
         rb2 = GetComponent<Rigidbody2D>();
         ai = GetComponent<AIPath>();
         v4 = GetComponent<Version4AIDestinationSetter>();
-        mov = GetComponent<EnemyMovement>();
+        mov = GetComponent<CaravanMovement>();
         //mov.enabled = false;
     }
 

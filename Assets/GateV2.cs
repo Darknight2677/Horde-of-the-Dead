@@ -6,11 +6,12 @@ using Pathfinding;
 public class GateV2 : MonoBehaviour
 {
     public AIPath aIPath;
+    public bool PlayerInCamp;
 
     // Start is called before the first frame update
     void Start()
     {
-        //GetComponent<BoxCollider2D>().enabled = false;
+        PlayerInCamp = false;
     }
 
     // Update is called once per frame
@@ -24,9 +25,10 @@ public class GateV2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "NPC")
+        if (collision.gameObject.tag == "Player")
         {
             GetComponent<BoxCollider2D>().enabled = true;
+            PlayerInCamp = true;
         }
     }
 
