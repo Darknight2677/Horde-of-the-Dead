@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Adina/Scenes/CREDIT HELP.unity
     guid: 9129a84cacf47cd4fa7b8b9de5c0ba04
+  - enabled: 1
+    path: Assets/Closing Scene.unity
+    guid: 21ff816bd772dce43aed19c5a8789d48
+  - enabled: 1
+    path: Assets/Victory Scene.unity
+    guid: 94e0d225066be564c90b1e95d1072044
   m_configObjects: {}

@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Closing Scene");
         }
 
         if(HordeDefeated == HordeNeededToDefeat)
