@@ -104,6 +104,8 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "HealthPack")
         {
             health = maxHealth;
+            healthBar.SetHealth(maxHealth);
+            Destroy(collision.gameObject);
         }
 
     }

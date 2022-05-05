@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Shooting : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class Shooting : MonoBehaviour
 
     public int bulletCount;
     public int maxBulletCount = 30;
-    public Text CurrentBullets;
+    public TMP_Text CurrentBullets;
 
     private bool reloading;
 
