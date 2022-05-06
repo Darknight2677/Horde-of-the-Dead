@@ -12,6 +12,7 @@ public class Dialogue : MonoBehaviour
     public float typingSpeed;
 
     public GameObject continueButton;
+    public GameObject continueBox;
     public GameObject textBox;
 
     public bool dialogueFinished;
@@ -28,6 +29,7 @@ public class Dialogue : MonoBehaviour
         if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
+            continueBox.SetActive(true);
         }
     }
 
@@ -43,6 +45,7 @@ public class Dialogue : MonoBehaviour
     public void NextSentence()
     {
         continueButton.SetActive(false);
+        continueBox.SetActive(false);
 
         if (index < sentences.Length - 1)
         {
@@ -57,6 +60,7 @@ public class Dialogue : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             dialogueFinished = true;
+            continueBox.SetActive(false);
             textBox.SetActive(false);
         }
     }
