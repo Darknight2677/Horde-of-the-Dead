@@ -109,7 +109,7 @@ public class EnemyCombat : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            health--;
+            health -= 2;
         }
     }
 

@@ -252,7 +252,7 @@ MonoBehaviour:
   attackRange: 2
   attackRate: 2
   health: 0
-  maxHealth: 4
+  maxHealth: 6
   Destination: {fileID: 3164075808751581237}
   Move: {fileID: 3164075808751581642}
   Path: {fileID: 3164075808751581236}
