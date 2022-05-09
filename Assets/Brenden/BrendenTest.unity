@@ -1247,6 +1247,8 @@ MonoBehaviour:
   - 'RICHARD:  You  scared  me.'
   - 'RICHARD:  Oh, what  am  I  doing?  I''m  picking  flowers.'
   - 'RICHARD:  Yes,  I  know  we''re  in  the  middle  of  a  zombie  apocalypse.'
+  - 'RICHARD:  You  know  where  the  Survivor  camp  is?'
+  - 'RICHARD:  Awesome,  I''ll  come  along.'
   typingSpeed: 0.02
   continueButton: {fileID: 1405495680}
   continueBox: {fileID: 1866490314}
@@ -22981,9 +22983,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 924459312}
   sentences:
-  - 'SARAH:  Hello,  did  you  get  cold  too.'
-  - 'SARAH:  Well,  I  freezing!'
-  - 'SARAH:  Yes,  I''m  coming  just  let  me  war  up.'
+  - 'SARAH:  Hello,  did  you  get  cold  too?'
+  - 'SARAH:  Well,  I''m  freezing!'
+  - 'SARAH:  Yes,  I''m  coming  just  let  me  warm  up.'
   typingSpeed: 0.02
   continueButton: {fileID: 1360301742}
   continueBox: {fileID: 1249426020}
@@ -28995,8 +28997,10 @@ MonoBehaviour:
   sentences:
   - 'LUIS:  Hello,  is  sombody  there?'
   - 'LUIS:  Oh,  hello!'
-  - 'LUIS:  My  name  Luis,  I  got  lost  from  my group  and  been hiding  ever 
-    since.'
+  - 'LUIS:  My  name  is  Luis,  I  got  lost  from  my group  and  been hiding 
+    ever  since.'
+  - 'LUIS:  Would  it  be  cool  if  I  came  along  with  you?'
+  - 'LUIS:  Great!  I''m  coming.'
   typingSpeed: 0.02
   continueButton: {fileID: 247650723}
   continueBox: {fileID: 1266968386}
