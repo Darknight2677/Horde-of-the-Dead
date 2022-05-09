@@ -1243,10 +1243,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 533238976}
   sentences:
-  - 'NPC:  Help  me!'
-  - 'PLAYER:  I''m  here  to  help!'
-  - 'NPC:  Thank  you  for  your  help.'
-  - 'PLAYER:  No  problem.'
+  - 'RICHARD: OH?!?!'
+  - 'RICHARD:  You  scared  me.'
+  - 'RICHARD:  Oh,  what  am  I  doing?  I''m  picking  flowers.'
+  - 'RICHARD:  Yes,  I  know  we''re  in  a  zombie  apocalypse.'
   typingSpeed: 0.02
   continueButton: {fileID: 1405495680}
   continueBox: {fileID: 1866490314}
@@ -22981,10 +22981,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 924459312}
   sentences:
-  - 'NPC:  Help  me!'
-  - 'PLAYER:  I''m  here  to  help!'
-  - 'NPC:  Thank  you  for  your  help.'
-  - 'PLAYER:  No  problem.'
+  - 'SARAH: Hello,  did  you  get  cold  too?'
+  - 'SARAH:  Well,  I''m  freezing!'
+  - 'SARAH:  Yes,  I''m  coming  just  let  me  warm  up.'
   typingSpeed: 0.02
   continueButton: {fileID: 1360301742}
   continueBox: {fileID: 1249426020}
@@ -28994,10 +28993,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1709427739}
   sentences:
-  - 'NPC:  Help  me!'
-  - 'PLAYER:  I''m  here  to  help!'
-  - 'NPC:  Thank  you  for  your  help.'
-  - 'PLAYER:  No  problem.'
+  - 'LUIS:  Hello,  is  somebody  there?'
+  - 'LUIS:  Oh  hello!'
+  - 'LUIS:  My  name  Luis,  I  got  lost  from  my  group  and  been  hiding  ever 
+    since.'
   typingSpeed: 0.02
   continueButton: {fileID: 247650723}
   continueBox: {fileID: 1266968386}
