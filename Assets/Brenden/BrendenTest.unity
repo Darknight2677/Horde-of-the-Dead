@@ -1243,10 +1243,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 533238976}
   sentences:
-  - 'NPC:  Help  me!'
-  - 'PLAYER:  I''m  here  to  help!'
-  - 'NPC:  Thank  you  for  your  help.'
-  - 'PLAYER:  No  problem.'
+  - 'RICHARD:  OH?!?!'
+  - 'RICHARD:  You  scared  me.'
+  - 'RICHARD:  Oh, what  am  I  doing?  I''m  picking  flowers.'
+  - 'RICHARD:  Yes,  I  know  we''re  in  the  middle  of  a  zombie  apocalypse.'
   typingSpeed: 0.02
   continueButton: {fileID: 1405495680}
   continueBox: {fileID: 1866490314}
@@ -22981,10 +22981,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 924459312}
   sentences:
-  - 'NPC:  Help  me!'
-  - 'PLAYER:  I''m  here  to  help!'
-  - 'NPC:  Thank  you  for  your  help.'
-  - 'PLAYER:  No  problem.'
+  - 'SARAH:  Hello,  did  you  get  cold  too.'
+  - 'SARAH:  Well,  I  freezing!'
+  - 'SARAH:  Yes,  I''m  coming  just  let  me  war  up.'
   typingSpeed: 0.02
   continueButton: {fileID: 1360301742}
   continueBox: {fileID: 1249426020}
@@ -28237,7 +28236,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 8802756b3caf22c4ea702956a49c8f88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -28994,10 +28993,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1709427739}
   sentences:
-  - 'NPC:  Help  me!'
-  - 'PLAYER:  I''m  here  to  help!'
-  - 'NPC:  Thank  you  for  your  help.'
-  - 'PLAYER:  No  problem.'
+  - 'LUIS:  Hello,  is  sombody  there?'
+  - 'LUIS:  Oh,  hello!'
+  - 'LUIS:  My  name  Luis,  I  got  lost  from  my group  and  been hiding  ever 
+    since.'
   typingSpeed: 0.02
   continueButton: {fileID: 247650723}
   continueBox: {fileID: 1266968386}
@@ -32023,7 +32022,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 8802756b3caf22c4ea702956a49c8f88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -67869,7 +67868,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -971390340114725862, guid: 8de9d5a48bccc574596f2e511c87e0ac,
+  m_Sprite: {fileID: 8984630869279501541, guid: 7d09af79abe31b147ac6b68ad7356e89,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
