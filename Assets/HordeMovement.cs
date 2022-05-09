@@ -5,11 +5,13 @@ using Pathfinding;
 
 public class HordeMovement : MonoBehaviour
 {
-    public AIPath aIPath;
+    //public AIPath aIPath;
 
     public AIDestinationSetter Destination;
     public EnemyMovement Move;
     public AIPath Path;
+
+    public GateV2 gate;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +28,7 @@ public class HordeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (aIPath.reachedEndOfPath == true)
+        if (gate.PlayerInCamp == true)
         {
             Destination.enabled = true;
             Move.enabled = true;

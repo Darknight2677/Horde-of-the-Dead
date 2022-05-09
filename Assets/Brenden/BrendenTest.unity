@@ -2499,13 +2499,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110100225}
-  m_LocalRotation: {x: 0, y: 0, z: 0.5397262, w: 0.8418407}
-  m_LocalPosition: {x: -23.05, y: 42, z: 253.35506}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5846038, w: 0.81131893}
+  m_LocalPosition: {x: -23.25, y: 41.89, z: 253.35506}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1078686256}
   m_RootOrder: 138
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 65.33}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 71.55}
 --- !u!212 &110100227
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55787,6 +55787,133 @@ CircleCollider2D:
   m_Offset: {x: 0.0000076293945, y: 0}
   serializedVersion: 2
   m_Radius: 1.5999999
+--- !u!1 &1810116752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1810116754}
+  - component: {fileID: 1810116753}
+  m_Layer: 0
+  m_Name: _Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1810116753
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810116752}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b5ceac57c6dd9604ea8087bcb0d61a65, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1810116754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810116752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.589148, y: -41.047035, z: -1.054931}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 102
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1813569571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65058,10 +65185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!1 &3164075809094469864
 GameObject:
   m_ObjectHideFlags: 0
@@ -65342,10 +65469,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &3164075809094469904
 Rigidbody2D:
   serializedVersion: 4
@@ -65688,10 +65815,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &3164075809117013925
 Rigidbody2D:
   serializedVersion: 4
@@ -66096,10 +66223,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!114 &3164075809450862120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66442,10 +66569,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!60 &3164075809676314144
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -66726,10 +66853,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!114 &3164075809676314584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71106,10 +71233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &6655473144624826329
 Rigidbody2D:
   serializedVersion: 4
@@ -71370,10 +71497,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!61 &6655473145083213953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71843,10 +71970,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &8108732074081546921
 Rigidbody2D:
   serializedVersion: 4
@@ -71992,10 +72119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!114 &8108732074081547092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72385,10 +72512,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!212 &8108732074240818184
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72594,10 +72721,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!114 &8108732074240818676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72927,10 +73054,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!212 &8108732074611521624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73136,10 +73263,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!114 &8108732074611521956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73407,10 +73534,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &8108732074757330693
 Rigidbody2D:
   serializedVersion: 4
@@ -73678,10 +73805,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &8108732074764242325
 Rigidbody2D:
   serializedVersion: 4
@@ -74011,10 +74138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!114 &8108732074858123344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74220,10 +74347,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &8108732074858123692
 Rigidbody2D:
   serializedVersion: 4
@@ -74554,10 +74681,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!4 &8108732075350606568
 Transform:
   m_ObjectHideFlags: 0
@@ -74763,10 +74890,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!114 &8108732075350606612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75034,10 +75161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &8108732075613190141
 Rigidbody2D:
   serializedVersion: 4
@@ -75183,10 +75310,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!114 &8108732075696393764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75576,10 +75703,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &8108732075697789437
 Rigidbody2D:
   serializedVersion: 4
@@ -75847,10 +75974,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!114 &8108732075852094384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76118,10 +76245,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608d1bbaee0ac5478c70b12304fc495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aIPath: {fileID: 4019149960068559781}
   Destination: {fileID: 0}
   Move: {fileID: 0}
   Path: {fileID: 0}
+  gate: {fileID: 1666154075}
 --- !u!50 &8108732076023018765
 Rigidbody2D:
   serializedVersion: 4
