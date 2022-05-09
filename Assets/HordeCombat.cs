@@ -95,7 +95,7 @@ public class HordeCombat : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            health--;
+            health -= 2;
         }
     }
 

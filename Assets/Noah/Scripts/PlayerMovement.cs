@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(HordeDefeated == HordeNeededToDefeat)
         {
-            SceneManager.LoadScene("MainMenuScene");
+            SceneManager.LoadScene("Victory Scene");
         }
 
 
