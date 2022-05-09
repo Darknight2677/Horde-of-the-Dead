@@ -29047,10 +29047,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1920561931}
   sentences:
-  - 'NPC:  Help  me!'
-  - 'PLAYER:  I''m  here  to  help!'
-  - 'NPC:  Thank  you  for  your  help.'
-  - 'PLAYER:  No  problem.'
+  - 'AMANDA:  Hey,  I  need  some  freinds.  Can  I  join  you?'
+  - 'AMANDA:  By  the  way,  My  name  is  Amanda.'
   typingSpeed: 0.02
   continueButton: {fileID: 2040513207}
   continueBox: {fileID: 106495218}
