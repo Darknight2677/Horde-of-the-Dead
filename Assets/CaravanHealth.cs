@@ -23,7 +23,7 @@ public class CaravanHealth : MonoBehaviour
         if (health <= 0)
         {
             Destroy(this.gameObject);
-            SceneManager.LoadScene("MainMenuScene");
+            SceneManager.LoadScene("Closing Scene");
         }
     }
 
