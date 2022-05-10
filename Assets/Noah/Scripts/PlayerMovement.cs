@@ -60,6 +60,11 @@ public class PlayerMovement : MonoBehaviour
             this.gameObject.transform.position = new Vector3(10.7f, -153.38f, 0);
         }
 
+        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.E) && Input.GetKey(KeyCode.Z))
+        {
+            SceneManager.LoadScene("Victory Scene");
+        }
+
         if (health <= 0)
         {
             SceneManager.LoadScene("Closing Scene");

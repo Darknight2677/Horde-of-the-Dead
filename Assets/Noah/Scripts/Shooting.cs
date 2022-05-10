@@ -18,6 +18,9 @@ public class Shooting : MonoBehaviour
 
     private bool reloading;
 
+    private float nextFireTime;
+    public float fireRate = 1f;
+
     //private FireAnimation FA;
 
     //public Text MaxBullets;
@@ -45,7 +48,7 @@ public class Shooting : MonoBehaviour
 
         void Shoot()
         {
-            if (bulletCount > 0 && reloading == false)
+            if (bulletCount > 0 && reloading == false && nextFireTime < Time.time)
             {
                 //FA.anim.SetBool("Shoot", true);
                 GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
@@ -53,6 +56,8 @@ public class Shooting : MonoBehaviour
                 rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
                 Destroy(bullet, 5f);
                 bulletCount--;
+
+                nextFireTime = Time.time + fireRate;
             }
 
 

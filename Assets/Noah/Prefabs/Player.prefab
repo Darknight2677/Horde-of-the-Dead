@@ -264,6 +264,7 @@ MonoBehaviour:
   bulletCount: 0
   maxBulletCount: 30
   CurrentBullets: {fileID: 0}
+  fireRate: 0.2
 --- !u!95 &3176051152455461672
 Animator:
   serializedVersion: 3
